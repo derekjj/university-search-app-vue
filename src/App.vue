@@ -48,4 +48,77 @@ export default defineComponent({
   color: #2c3e50;
   margin-top: 60px;
 }
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.App {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+input,
+select,
+button {
+  margin: 10px 5px;
+  padding: 5px;
+}
+
+@media (max-width: 768px) {
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
+  }
+
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  tr {
+    margin-bottom: 10px;
+  }
+
+  td {
+    border: none;
+    position: relative;
+    padding-left: 50%;
+  }
+
+  td:before {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+    content: attr(data-label);
+    font-weight: bold;
+  }
+}
 </style>

@@ -12,7 +12,7 @@ This is a web application that allows users to search for universities and manag
 1. Clone this repository:
 
    ```
-   git clone 'https://github.com/derekjj/university-search-app'
+   git clone 'https://github.com/derekjj/university-search-app-vue'
    cd university-search-app-vue
    ```
 
